@@ -1,7 +1,5 @@
 package com.app.demo.models;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.*;
@@ -16,7 +14,8 @@ public class Experiencia {
     private String tiempo;
     private String lugar;
     private String puesto_trabajo;
-    private List<String> descripcion_trabajo;
+    @Column(columnDefinition = "TEXT")
+    private String descripcion_trabajo;
 
     @JsonIgnore
     @ManyToOne
@@ -28,11 +27,11 @@ public class Experiencia {
     public String getTiempo() {return tiempo;}
     public String getLugar() {return lugar;}
     public String getPuesto_trabajo() {return puesto_trabajo;}
-    public List<String> getDescripcion_trabajo() {return descripcion_trabajo;}
+    public String getDescripcion_trabajo() {return descripcion_trabajo;}
     public void setTiempo(String tiempo) {this.tiempo = tiempo;}
     public void setLugar(String lugar) {this.lugar = lugar;}
     public void setPuesto_trabajo(String puesto_trabajo) {this.puesto_trabajo = puesto_trabajo;}
-    public void setDescripcion_trabajo(List<String> descripcion_trabajo) {this.descripcion_trabajo = descripcion_trabajo;}
+    public void setDescripcion_trabajo(String descripcion_trabajo) {this.descripcion_trabajo = descripcion_trabajo;}
 
  
 
