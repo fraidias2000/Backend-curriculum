@@ -1,0 +1,10 @@
+com\app\demo\services\EmailService.class
+com\app\demo\models\Contacto.class
+com\app\demo\models\Curriculum.class
+com\app\demo\controllers\ContactoController.class
+com\app\demo\models\Formacion.class
+com\app\demo\controllers\CurriculumController.class
+com\app\demo\models\Experiencia.class
+com\app\demo\BackendAppApplication.class
+com\app\demo\models\Aptitud.class
+com\app\demo\repositories\CurriculumRepository.class
