@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CurriculumRepository extends JpaRepository<Curriculum, Long> {
-    // Aquí puedes añadir métodos personalizados si los necesitas
 }
