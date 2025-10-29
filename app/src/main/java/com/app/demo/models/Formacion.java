@@ -13,6 +13,8 @@ public class Formacion {
     private String tiempo;
     private String lugar;
     private String titulo;
+    @Column(name = "descripcion_formacion")
+    private String descripcionFormacion;
 
     @JsonIgnore
     @ManyToOne
@@ -24,7 +26,9 @@ public class Formacion {
     public void setId(Long id) { this.id = id; }
     public String getTiempo() {return tiempo;}
     public String getLugar() {return lugar;}
-    public String getPuesto_trabajo() {return titulo;}
+    public String gettitulo() {return titulo;}
+    public String getdescripcionFormacion() {return descripcionFormacion;}
+    public void setdescripcionFormacion(String descripcion) {this.descripcionFormacion = descripcionFormacion;}
     public void setTiempo(String tiempo) {this.tiempo = tiempo;}
     public void setLugar(String lugar) {this.lugar = lugar;}
     public void setTitulo(String titulo) {this.titulo = titulo;}
